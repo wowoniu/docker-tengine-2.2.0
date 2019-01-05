@@ -7,4 +7,4 @@ docker build -t tengine:2.2.0 ./
 
 #启动容器
 
-docker run -p 80:80 -d tengine:2.2.0
+docker run -p 80:80 -d -v XXX/nginx.conf:/home/msoft/tengine/conf/nginx.conf tengine:2.2.0
